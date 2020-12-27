@@ -151,7 +151,7 @@ def mean_std_rows(df):
     df["std"] = df[columns].apply(np.std, axis = 1)
 
 
-def autoprep(file_url, cl_index, dates=None, scalevars=False, test_size=0.3, categorical=False):
+def autoprep(PATH, y, dates=None, scalevars=False, testsize=0.3, categorical=False):
     """
     Applies all our auto prerprocessing steps
     file_url:
